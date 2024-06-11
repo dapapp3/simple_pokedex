@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Search</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+  <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div class="row header-container">
+      <div class="col-12">
+        <h1 class="text-center">Pokedex</h1>
+        <input type="text" class="form-control" id="searchBar" placeholder="Search for a pokemon">
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="row" id="pokemon-cards">
+      <!-- Cards will be inserted here using JS -->
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Pokemon Details Panel -->
+  <div id="pokemonDetailsPanel" class="pokemon-details-panel">
+    <div class="card no-bounce" style="width: 100%;">
+      <!-- Main Grid -->
+      <div class="card-body pokemon-details grid-container" id="pokemonDetailsCardBody">
+        <h5 id="pokemonDetailsPanelTitle" class="card-title grid-item-title"></h5>
+        <p id="pokemonDetailsPanelTypes" class="card-text grid-item-types"></p>
+        <img id="pokemonDetailsPanelImage" src="" alt="Pokemon image" class="card-img-top grid-item-image">
+        <div id="pokemonDetailsPanelStats" class="grid-item-stats">
+          <canvas id="pokemonStatsChart"></canvas>
+        </div>
+        <p id="pokemonDetailsPanelPokedexEntry" class="card-text grid-item-pokedex-entry">Pokedex Entry</p>
+        <div class="profile-wrapper">
+          <p id="pokemonDetailsPanelProfile" class="card-text grid-item-profile">
+            <span class="profile-item-height">
+              <span class="profile-item-keyword">Height:</span>
+              <span class="profile-item-value"></span>
+            </span>
+            <span class="profile-item-weight">
+              <span class="profile-item-keyword">Weight:</span>
+              <span class="profile-item-value"></span>
+            </span>
+            <span class="profile-item-abilities">
+              <span class="profile-item-keyword">Abilities:</span>
+              <span class="profile-item-value"></span>
+            </span>
+            <span class="profile-item-egg-groups">
+              <span class="profile-item-keyword">Egg Groups:</span>
+              <span class="profile-item-value"></span>
+            </span>
+            <span class="profile-item-capture-rate">
+              <span class="profile-item-keyword">Capture Rate:</span>
+              <span class="profile-item-value"></span>
+            </span>
+            <span class="profile-item-growth-rate">
+              <span class="profile-item-keyword">Growth Rate:</span>
+              <span class="profile-item-value"></span>
+            </span>
+            <span class="profile-item-held-items">
+              <span class="profile-item-keyword">Held Items:</span>
+              <span class="profile-item-value"></span>
+            </span>
+          </p>
+        </div>
+        <div id="pokemonDetailsPanelLearnset" class="grid-item-learnset">
+          <h5 class="card-text">Learnset</h5>
+          <table class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Move Number</th>
+                <th scope="col">Move Name</th>
+                <th scope="col">Type</th>
+                <th scope="col">Power</th>
+                <th scope="col">Accuracy</th>
+                <th scope="col">PP</th>
+                <th scope="col">Damage Class</th>
+              </tr>
+            </thead>
+            <tbody id="learnsetTableBody">
+              <!-- Rows for moves will be added here dynamically -->
+            </tbody>
+          </table>
+        </div>
+        <div id="pokemonDetailsPanelLocations" class="grid-item-location">
+          <h5 class="card-text">Locations</h5>
+          <table class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Location Number</th>
+                <th scope="col">Location Name</th>
+              </tr>
+            </thead>
+            <tbody id="locationTableBody">
+              <!-- Rows for moves will be added here dynamically -->
+            </tbody>
+          </table>
+        </div>
+        <button id="closepokemonDetailsPanel" class="btn btn-primary grid-item-button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+  <script src="static/js/app.js"></script>
+</body>
+</html>

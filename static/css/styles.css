@@ -1,0 +1,264 @@
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+}
+
+.card:hover {
+    animation: bounce 0.25s;
+}
+
+.no-bounce:hover {
+    animation: none;
+}
+
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #212529;
+}
+
+.pokemon-details-panel {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 860px;
+    background-color: #444;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body.pokemon-details {
+    height: 860px;
+    width: 100%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.type {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.type.normal {
+    background-color: #A8A77A;
+}
+
+.type.fighting {
+    background-color: #C22E28;
+}
+
+.type.flying {
+    background-color: #A98FF3;
+}
+
+.type.poison {
+    background-color: #A33EA1;
+}
+
+.type.ground {
+    background-color: #E2BF65;
+}
+
+.type.rock {
+    background-color: #B6A136;
+}
+
+.type.bug {
+    background-color: #A6B91A;
+}
+
+.type.ghost {
+    background-color: #735797;
+}
+
+.type.fire {
+    background-color: #EE8130;
+}
+
+.type.water {
+    background-color: #6390F0;
+}
+
+.type.grass {
+    background-color: #7AC74C;
+}
+
+.type.electric {
+    background-color: #F7D02C;
+}
+
+.type.psychic {
+    background-color: #F95587;
+}
+
+.type.ice {
+    background-color: #96D9D6;
+}
+
+.type.dragon {
+    background-color: #6F35FC;
+}
+
+.type.steel {
+    background-color: #B7B7CE;
+}
+
+.type.dark {
+    background-color: #705746;
+}
+
+.type.unknown {
+    background: linear-gradient(to bottom, #b0d8d4 50%, #e9658f 50%);
+}
+
+.type.shadow {
+    background: #CB9AEF;
+}
+
+.type.fairy {
+    background-color: #D685AD;
+}
+
+.grid-container {
+    display: grid;
+    overflow-y: auto;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 275px 70px 200px 225px 40px;
+    grid-template-areas: 
+        "title title"
+        "image profile"
+        "types pokedex-entry"
+        "stats stats"
+        "learnset location"
+        "button button";
+}
+
+.grid-item-status {
+    grid-area: status;
+    grid-column: span 2;
+    text-align: center;
+    font-size: 2em;
+}
+
+.grid-item-title {
+    grid-area: title;
+    text-align: center;
+    grid-column: span 2;
+    font-size: 3em;
+}
+
+.grid-item-types {
+    grid-area: types;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.grid-item-types span {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.grid-item-image {
+    background-color: #f0f0f0; /* light grey */
+    height: 275px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-wrapper {
+    grid-area: profile;
+    background-color: #30A7D7;
+    padding: 3px;
+}
+
+.grid-item-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1px;
+}
+.profile-item-height,
+.profile-item-weight,
+.profile-item-abilities,
+.profile-item-egg-groups,
+.profile-item-capture-rate,
+.profile-item-growth-rate {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-item-held-items {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 3;
+}
+
+.profile-item-keyword {
+    font-size: 1.25em;
+    color: white;
+}
+
+.profile-item-value {
+    font-size: 1.25em;
+    color: black;
+}
+
+.grid-item-stats {
+    grid-area: stats;
+    color: black;
+    background-color: #f0f0f0; /* light grey */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.grid-item-pokedex-entry {
+    grid-area: pokedex-entry;
+    font-size: 1.5em;
+}
+
+.grid-item-learnset {
+    grid-area: learnset;
+    overflow: auto;
+}
+
+.grid-item-location {
+    grid-area: location;
+    overflow: auto;
+}
+
+.grid-item-button {
+    grid-area: button;
+    width: 100%;
+}

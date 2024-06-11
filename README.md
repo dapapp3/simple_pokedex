@@ -1,1 +1,1 @@
-# simple_pokedex
+# Simple Pokedex
