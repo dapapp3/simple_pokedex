@@ -109,7 +109,7 @@ function loadCards(cards) {
     // Loop through the array and create a card for each Pokemon
     for (let i = 0; i < cards.length; i++) {
         const cardColumn = document.createElement('div');
-        cardColumn.className = 'col-lg-2 col-md-4 col-sm-6';
+        cardColumn.className = 'col-lg-3 col-md-4 col-sm-6';
 
         const card = document.createElement('div');
         card.className = 'card';
