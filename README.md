@@ -31,7 +31,7 @@ Whether you're a long-time Pokémon fan or new to the series, this Generation 1 
 - ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ## Usage
-<img src="static/images/Home Page.png" alt="Pokedex Screenshot" style="width: 100%;">
+<img src="static/images/Home Page.PNG" alt="Pokedex Screenshot" style="width: 100%;">
 
 Start by browsing the pokemon on the home page. Once you find one that interests you, click on its card to bring up a panel detailing just about anything you could want to know about that pokemon.
 
