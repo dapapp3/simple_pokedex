@@ -31,21 +31,21 @@ Whether you're a long-time Pokémon fan or new to the series, this Generation 1 
 - ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ## Usage
-<img src="static/images/Home Page.png" alt="Pokedex Screenshot" style="width: 100%;">
+<img src="static/images/Home Page.PNG" alt="Pokedex Screenshot" style="width: 100%;">
 
 Start by browsing the pokemon on the home page. Once you find one that interests you, click on its card to bring up a panel detailing just about anything you could want to know about that pokemon.
 
-<img src="static/images/Pokemon Details Panel.png" alt="Pokemon Details Screenshot" style="width: 100%;">
+<img src="static/images/Pokemon Details Panel.PNG" alt="Pokemon Details Screenshot" style="width: 100%;">
 
 In addition to the pokemon's information there is a small chance to encounter a shiny pokemon. So be sure to keep an eye out!
 
-<img src="static/images/Shiny Pokemon.png" alt="Shiny Pokemon Screenshot" style="width: 100%;">
+<img src="static/images/Shiny Pokemon.PNG" alt="Shiny Pokemon Screenshot" style="width: 100%;">
 
 Finally if you're looking for a specific pokemon and don't want to scroll forever trying to find it you can use the search functionality. Pokemon are searchable by name, number, and type.
 
-<img src="static/images/Name Search.png" alt="Search by Name" style="width: 100%;">
-<img src="static/images/Number Search.png" alt="Search by Number" style="width: 100%;">
-<img src="static/images/Type Search.png" alt="Search by Type" style="width: 100%;">
+<img src="static/images/Name Search.PNG" alt="Search by Name" style="width: 100%;">
+<img src="static/images/Number Search.PNG" alt="Search by Number" style="width: 100%;">
+<img src="static/images/Type Search.PNG" alt="Search by Type" style="width: 100%;">
 
 ## Getting Started
 
