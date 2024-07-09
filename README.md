@@ -68,10 +68,8 @@ Follow these steps to set up the project:
     - Type the following command and press Enter:
 
       ```
-      git clone https://github.com/your-username/your-project-name.git
+      git clone https://github.com/dapapp3/simple_pokedex.git
       ```
-
-    Replace `https://github.com/your-username/your-project-name.git` with the actual URL of the project repository.
 
 2. **Install Python (if necessary)**
 
